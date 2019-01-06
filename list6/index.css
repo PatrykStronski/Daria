@@ -1,0 +1,28 @@
+.container{
+	display: flex;
+	justify-content: space-around;
+}
+
+section{
+	display: inline-flex;
+	flex-direction: column;
+}
+
+li {
+	cursor: pointer;
+}
+
+.coatOfArms {
+	height: 140px;
+	width: 100px;
+	margin-right:20px;
+}
+
+article {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 25px;
+}
+
