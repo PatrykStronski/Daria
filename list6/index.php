@@ -8,6 +8,7 @@
 			  crossorigin="anonymous"></script>
    <script src="index.js"></script>
 <link rel="stylesheet" href="/list6/index.css">
+<meta charset="utf8">
 </head>
 
 <body>
