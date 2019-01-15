@@ -1,3 +1,19 @@
+body {
+	background: #ffe0b5;
+}
+
+.drpList{
+	padding: 10px;
+}
+
+h3 {
+	padding-bottom: 20px;
+}
+
+.drpList * {
+	margin: auto;
+}
+
 .container{
 	display: flex;
 	justify-content: space-around;
@@ -15,7 +31,10 @@ section{
 }
 
 article {
+	background:#eedaa8;	
 	display: flex;
+	padding: 15px;
+	border-radius: 10px;
 	flex-direction: column;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -24,7 +43,7 @@ article {
 
 .firstPart {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-direction: row;
 }
 
@@ -37,5 +56,5 @@ article {
 }
 
 .middlify img{
-	height: 40%;
+	width: 30%;
 }

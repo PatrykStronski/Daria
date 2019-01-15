@@ -8,20 +8,20 @@
 			  crossorigin="anonymous"></script>
    <script src="index.js"></script>
 <link rel="stylesheet" href="/list6/index.css">
-<meta charset="utf8">
+<meta charset="utf-8">
 </head>
 
 <body>
     <div class="container">
-        <section>
+        <section class="drpList">
             <h3> Voivodeships </h3>
-            <ul id="voiv">
+            <div id="voiv">
             
             </ul>
         </section>
-        <section>
+        <section class="drpList">
             <h3> Cities </h3>
-            <ul id="cities">
+            <div id="cities">
 
             </ul>
         </section>
