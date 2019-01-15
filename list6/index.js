@@ -1,5 +1,5 @@
 function printCity(data){
-	let ht = '<img class="coatOfArms" src="'+data.obrazek+'"> <section class="info"> <h4>'+data.nazwa+'</h4><div class="desc">'+data.opis+'</div><div class="info"> <div class="infoItem"> Powierzchnia: '+data.powierzchnia+' </div><div class="infoItem"> Populacja: '+ data.populacja+' </div><div class="infoItem"> Prezydent: '+data.prezydent+' </div><div class="infoItem"> Papież: Jego ekscelencja magnificencja Jan Paweł II </div> </div> </section>'
+	let ht = '<section class="firstPart"><img class="coatOfArms" src="'+data.herb+'"> <section class="info"> <h4>'+data.nazwa+'</h4><div class="desc">'+data.opis+'</div><div class="info"> <div class="infoItem"> Powierzchnia: '+data.powierzchnia+' </div><div class="infoItem"> Populacja: '+ data.populacja+' </div><div class="infoItem"> Prezydent: '+data.prezydent+' </div> </div></section> </section><section class="middlify"><img src='+data.obrazek+'></section>';
 	document.getElementById('cityInfo').innerHTML=ht;	
 }
 
@@ -23,14 +23,22 @@ function showCities(wid) {
 
 
 function fillTable(elemId, data, onclk) { //data is an array of elements to be inserted in JSON format
+    let sel = document.createElement('select');
+    document.getElementById(elemId).append(sel);
+    sel.onchange = () => {
+	    onclk(event.target.value);
+    };
+    let option1 = document.createElement('option');
+    option1.disabled = true;
+    option1.selected = true;
+    option1.innerText = "Choose...";
+    sel.appendChild(option1);
     for (let x in data) {
-        let li = document.createElement('li');
+        let option = document.createElement('option');
 	let id = data[x].Wid || data[x].Mid;
-        li.onclick = () => {
-		onclk(id);
-        }
-        li.innerText = data[x].Nazwa || data[x].nazwa;
-        document.getElementById(elemId).append(li);
+	option.value = id;
+        option.innerText = data[x].Nazwa || data[x].nazwa;
+        sel.appendChild(option);
     }
 }
 

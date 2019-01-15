@@ -8,10 +8,6 @@ section{
 	flex-direction: column;
 }
 
-li {
-	cursor: pointer;
-}
-
 .coatOfArms {
 	height: 140px;
 	width: 100px;
@@ -20,9 +16,26 @@ li {
 
 article {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 25px;
 }
 
+.firstPart {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.middlify {
+	display:flex;
+	flex-direction: row;
+	justify-content:space-around;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.middlify img{
+	height: 40%;
+}
