@@ -1,0 +1,30 @@
+form{
+	display: grid;
+	padding: 20px;
+	border-radius: 10px;
+	background: #dddddd;
+	width: 340px;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	grid-template-columns: 100px 200px;
+}	
+
+label {
+	grid-column: 1/2;
+}
+
+input {
+	grid-column: 2/3;
+}
+
+.warn {
+	grid-column: 2/3;
+	color: red;
+	font-size: 12px;
+}
+
+.affected{
+	grid-column: 2/3;
+	color:green;
+	font-size: 12px;
+}
